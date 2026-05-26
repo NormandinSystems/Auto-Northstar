@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spécialistes en Carrosserie à Laval | Northstar Auto</title>
+    <meta name="description" content="Réparation professionnelle de collisions, redressement de châssis au laser, débosselage sans peinture (PDR) et élimination de la rouille à Laval, Québec.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Syncopate', 'sans-serif'],
+                    },
+                    colors: {
+                        black: '#000000',
+                        zinc: {
+                            900: '#18181b',
+                            950: '#09090b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #000000; color: #f8fafc; overflow-x: hidden; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .text-gradient { background: linear-gradient(to right, #ffffff, #71717a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="antialiased selection:bg-white selection:text-black">
+
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 backdrop-blur-md bg-black/80 border-b border-white/10" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 w-full">
+                
+                <div class="flex-shrink-0 flex items-center lg:w-1/4">
+                    <a href="index-fr.html" class="font-display font-bold text-lg md:text-xl tracking-tighter text-white">
+                        NORTHSTAR<span class="text-zinc-500 font-light">AUTO</span>
+                    </a>
+                </div>
+
+                <div class="hidden lg:flex flex-grow justify-center space-x-8">
+                    <a href="index-fr.html" class="text-sm font-semibold text-zinc-400 hover:text-white transition-colors">Accueil</a>
+                    <a href="bodywork-fr.html" class="text-sm font-bold text-white border-b-2 border-white pb-1">Carrosserie</a>
+                    <a href="paint-fr.html" class="text-sm font-semibold text-zinc-400 hover:text-white transition-colors">Peinture</a>
+                    <a href="mechanics-fr.html" class="text-sm font-semibold text-zinc-400 hover:text-white transition-colors">Mécanique</a>
+                    <a href="ac-services-fr.html" class="text-sm font-semibold text-zinc-400 hover:text-white transition-colors">Climatisation</a>
+                </div>
+
+                <div class="hidden lg:flex items-center justify-end space-x-6 lg:w-1/4">
+                    <a href="bodywork.html" class="text-sm font-bold text-zinc-400 hover:text-white transition-colors">EN</a>
+                    <a href="tel:5145811433" class="relative group inline-flex items-center justify-center px-5 py-2 font-bold text-black bg-white rounded-full overflow-hidden hover:bg-zinc-200 transition-all text-sm">
+                        <i class="fa-solid fa-phone mr-2"></i> (514) 581-1433
+                    </a>
+                </div>
+
+                <div class="lg:hidden flex items-center justify-end w-1/4">
+                    <button id="mobile-menu-btn" class="text-zinc-400 hover:text-white focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-zinc-950 border-b border-white/10 absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="index-fr.html" class="block px-3 py-2 text-base font-medium text-zinc-400 hover:text-white">Accueil</a>
+                <a href="bodywork-fr.html" class="block px-3 py-2 text-base font-bold text-white bg-zinc-900 rounded-md">Carrosserie</a>
+                <a href="paint-fr.html" class="block px-3 py-2 text-base font-medium text-zinc-400 hover:text-white">Peinture</a>
+                <a href="mechanics-fr.html" class="block px-3 py-2 text-base font-medium text-zinc-400 hover:text-white">Mécanique</a>
+                <a href="ac-services-fr.html" class="block px-3 py-2 text-base font-medium text-zinc-400 hover:text-white">Climatisation</a>
+                <a href="bodywork.html" class="block px-3 py-2 text-base font-medium text-zinc-400 hover:text-white border-t border-white/10 mt-2 pt-2">English (EN)</a>
+                <a href="tel:5145811433" class="block px-3 py-3 mt-4 text-center text-base font-bold text-black bg-white rounded-md mx-4">
+                    <i class="fa-solid fa-phone mr-2"></i> Appeler (514) 581-1433
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative w-full pt-40 pb-32 lg:pt-56 lg:pb-48 flex items-center justify-center overflow-hidden border-b border-white/10 bg-zinc-950">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1504222490345-c075b6008014?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Atelier de soudure carrosserie" class="w-full h-full object-cover opacity-25 object-center">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-block mb-6 px-4 py-1.5 rounded-full bg-zinc-900 border border-white/20 text-white text-xs font-bold tracking-widest uppercase reveal">
+                Experts en Restauration Structurelle
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight reveal" style="transition-delay: 100ms;">
+                RECONSTRUIRE. <span class="text-gradient">RESTAURER.</span> RESTITUER.
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-zinc-400 font-light max-w-3xl mx-auto reveal" style="transition-delay: 200ms;">
+                Nous voyons au-delà des dommages de surface. Nos techniciens certifiés reconstruisent l'intégrité structurelle de votre véhicule afin qu'il performe exactement comme avant l'impact.
+            </p>
+            <div class="mt-10 reveal" style="transition-delay: 300ms;">
+                <a href="#contact" class="inline-flex items-center justify-center px-10 py-4 text-sm font-bold tracking-wide text-black bg-white rounded-full shadow-lg hover:bg-zinc-200 transition-all transform hover:-translate-y-1">
+                    Réservez votre évaluation <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-24 bg-black text-center px-4">
+        <div class="max-w-4xl mx-auto reveal">
+            <h2 class="text-sm font-bold tracking-widest text-zinc-500 uppercase mb-4">Ingénierie de précision</h2>
+            <h3 class="text-3xl md:text-4xl font-display font-bold text-white mb-8">POURQUOI LES NORMES EXACTES COMPTENT</h3>
+            <p class="text-zinc-400 text-lg leading-relaxed mb-6">
+                Les véhicules modernes sont conçus avec des zones de déformation extrêmement complexes destinées à absorber les chocs et à protéger les passagers. Lors d'une collision sévère, cette structure sous-jacente est lourdement compromise, même si les panneaux extérieurs ne semblent pas détruits.
+            </p>
+            <p class="text-zinc-400 text-lg leading-relaxed">
+                Chez Northstar Auto à Laval, nous utilisons strictement les protocoles de réparation approuvés par les fabricants. Nous ne nous contentons pas de débosseler ; nous remplaçons l'acier à haute résistance endommagé, ressoudons les joints avec précision, et garantissons que votre véhicule respecte les normes de sécurité OEM strictes avant la peinture.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-24 bg-zinc-950 border-y border-white/5 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-5xl font-display font-bold text-white">NOS SERVICES CARROSSERIE</h2>
+                <div class="w-16 h-1 bg-white mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                
+                <div class="bg-black border border-white/10 p-10 rounded-2xl hover:border-white/40 transition-all group reveal">
+                    <div class="w-16 h-16 bg-zinc-900 rounded-xl border border-white/20 flex items-center justify-center text-white text-3xl mb-8 group-hover:scale-110 group-hover:bg-white group-hover:text-black transition-all">
+                        <i class="fa-solid fa-car-burst"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-4">Reconstruction Majeure</h4>
+                    <p class="text-zinc-400 leading-relaxed mb-6">
+                        Les impacts violents nécessitent plus que des retouches cosmétiques. Notre installation est équipée pour gérer les gros chocs, les remplacements de panneaux OEM et les reconstructions complètes. Nous démontons soigneusement la zone pour exposer les plis structurels cachés.
+                    </p>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-zinc-500 mr-3"></i> Remplacement Authentique de Panneaux OEM</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-zinc-500 mr-3"></i> Soudure Avancée d'Acier Haute Résistance</li>
+                    </ul>
+                </div>
+
+                <div class="bg-black border border-white/10 p-10 rounded-2xl hover:border-white/40 transition-all group reveal" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-zinc-900 rounded-xl border border-white/20 flex items-center justify-center text-white text-3xl mb-8 group-hover:scale-110 group-hover:bg-white group-hover:text-black transition-all">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-4">Redressement de Châssis au Laser</h4>
+                    <p class="text-zinc-400 leading-relaxed mb-6">
+                        Un châssis plié compromet la conduite et la sécurité de votre véhicule. À l'aide de systèmes de mesure laser informatisés de pointe, nous ancrons votre voiture et appliquons une pression hydraulique précise pour ramener le châssis aux spécifications exactes du fabricant, au millimètre près.
+                    </p>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-zinc-500 mr-3"></i> Diagnostics Informatisés 3D</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-zinc-500 mr-3"></i> Restaure l'Alignement Parfait des Roues</li>
+                    </ul>
+                </div>
+
+                <div class="bg-black border border-white/10 p-10 rounded-2xl hover:border-white/40 transition-all group reveal">
+                    <div class="w-16 h-16 bg-zinc-900 rounded-xl border border-white/20 flex items-center justify-center text-white text-3xl mb-8 group-hover:scale-110 group-hover:bg-white group-hover:text-black transition-all">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-4">Débosselage Sans Peinture (DSP)</h4>
+                    <p class="text-zinc-400 leading-relaxed mb-6">
+                        Pour les bosses mineures, les coups de portière et les dommages causés par la grêle où la peinture d'usine est intacte, nos spécialistes massent le métal depuis l'arrière. Cette technique experte restaure instantanément la forme sans mastic ni repeinte.
+                    </p>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-zinc-500 mr-3"></i> Économique et Rapide</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-zinc-500 mr-3"></i> Conserve la Peinture d'Usine d'Origine</li>
+                    </ul>
+                </div>
+
+                <div class="bg-black border border-white/10 p-10 rounded-2xl hover:border-white/40 transition-all group reveal" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-zinc-900 rounded-xl border border-white/20 flex items-center justify-center text-white text-3xl mb-8 group-hover:scale-110 group-hover:bg-white group-hover:text-black transition-all">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-white mb-4">Rouille, Aluminium et ADAS</h4>
+                    <p class="text-zinc-400 leading-relaxed mb-6">
+                        Les hivers québécois sont rudes pour le métal. Nous éliminons la corrosion profonde et soudons de l'acier frais. Nous disposons de baies isolées pour l'aluminium (ex: F-150) et effectuons des recalibrations complètes des capteurs ADAS après réparation.
+                    </p>
+                    <ul class="space-y-2 text-sm text-zinc-300">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-zinc-500 mr-3"></i> Outils Spécialisés pour l'Aluminium</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-zinc-500 mr-3"></i> Calibration Subaru EyeSight et Capteurs</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-black py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+            <h3 class="text-3xl md:text-5xl font-display font-bold text-white mb-6">NOUS GÉRONS L'ASSURANCE</h3>
+            <p class="text-zinc-400 text-lg mb-12 max-w-3xl mx-auto">
+                Faire face à un accident est assez stressant ; traiter avec les experts en sinistre ne devrait pas l'être. Northstar Auto travaille directement avec tous les grands fournisseurs d'assurance au Québec.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 border border-white/10 rounded-2xl bg-zinc-950">
+                    <div class="text-3xl text-white mb-4"><i class="fa-solid fa-file-invoice"></i></div>
+                    <h5 class="text-lg font-bold text-white mb-2">Facturation Directe</h5>
+                    <p class="text-sm text-zinc-400">Nous soumettons des estimations précises et des photos directement à votre expert pour accélérer l'approbation.</p>
+                </div>
+                <div class="p-6 border border-white/10 rounded-2xl bg-zinc-950">
+                    <div class="text-3xl text-white mb-4"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <h5 class="text-lg font-bold text-white mb-2">Votre Défenseur</h5>
+                    <p class="text-sm text-zinc-400">Nous nous battons pour que vous obteniez des pièces OEM et les méthodes de réparation les plus sûres.</p>
+                </div>
+                <div class="p-6 border border-white/10 rounded-2xl bg-zinc-950">
+                    <div class="text-3xl text-white mb-4"><i class="fa-solid fa-bell"></i></div>
+                    <h5 class="text-lg font-bold text-white mb-2">Mises à Jour Constantes</h5>
+                    <p class="text-sm text-zinc-400">Vous restez complètement informé à chaque étape du processus de démontage et de réparation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-zinc-950 border-t border-white/10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-sm font-bold tracking-widest text-zinc-500 uppercase mb-2">Transparence</h2>
+                <h3 class="text-3xl md:text-4xl font-display font-bold text-white">LE PROCESSUS DE RÉPARATION</h3>
+                <div class="w-16 h-1 bg-white mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <div class="hidden md:block absolute top-8 left-0 w-full h-px bg-white/20 -z-10"></div>
+
+                <div class="text-center reveal">
+                    <div class="w-16 h-16 mx-auto bg-black border-2 border-white text-white text-xl font-display font-bold rounded-full flex items-center justify-center mb-6 shadow-lg">1</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Estimation</h4>
+                    <p class="text-sm text-zinc-400 px-4">Évaluation détaillée des dommages et devis informatisé avec votre assurance.</p>
+                </div>
+                <div class="text-center reveal" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 mx-auto bg-black border-2 border-white text-white text-xl font-display font-bold rounded-full flex items-center justify-center mb-6 shadow-lg">2</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Démontage</h4>
+                    <p class="text-sm text-zinc-400 px-4">Retrait des pièces endommagées pour exposer et cartographier tout dommage structurel caché.</p>
+                </div>
+                <div class="text-center reveal" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 mx-auto bg-black border-2 border-white text-white text-xl font-display font-bold rounded-full flex items-center justify-center mb-6 shadow-lg">3</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Châssis et Métal</h4>
+                    <p class="text-sm text-zinc-400 px-4">Redressement laser, soudure précise et remplacement méticuleux des nouveaux panneaux.</p>
+                </div>
+                <div class="text-center reveal" style="transition-delay: 300ms;">
+                    <div class="w-16 h-16 mx-auto bg-black border-2 border-white text-white text-xl font-display font-bold rounded-full flex items-center justify-center mb-6 shadow-lg">4</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Peinture et Finition</h4>
+                    <p class="text-sm text-zinc-400 px-4">Correspondance des couleurs, cuisson du vernis, recalibrage ADAS et nettoyage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-black border-t border-white/10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-sm font-bold tracking-widest text-zinc-500 uppercase mb-2">Contactez-nous</h2>
+                <h3 class="text-3xl md:text-5xl font-display font-bold text-white">PLANIFIEZ VOTRE SERVICE</h3>
+                <div class="w-24 h-1 bg-white mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-zinc-950 rounded-3xl overflow-hidden border border-white/10 reveal">
+                
+                <div class="p-8 md:p-12">
+                    <h4 class="text-2xl font-bold text-white mb-6">Demander une estimation</h4>
+                    <p class="text-zinc-400 mb-8">Remplissez le formulaire ci-dessous et notre équipe vous contactera sous peu pour planifier une évaluation ou répondre à vos questions.</p>
+                    
+                    <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-zinc-300 mb-2">Nom complet</label>
+                                <input type="text" id="name" name="name" required class="w-full bg-black border border-zinc-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-zinc-300 mb-2">Numéro de téléphone</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full bg-black border border-zinc-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-zinc-300 mb-2">Adresse courriel</label>
+                            <input type="email" id="email" name="email" required class="w-full bg-black border border-zinc-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors">
+                        </div>
+
+                        <div>
+                            <label for="vehicle" class="block text-sm font-medium text-zinc-300 mb-2">Marque/Modèle/Année du véhicule</label>
+                            <input type="text" id="vehicle" name="vehicle" placeholder="ex: 2021 Subaru Crosstrek" class="w-full bg-black border border-zinc-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-zinc-300 mb-2">Comment pouvons-nous vous aider ?</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full bg-black border border-zinc-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white focus:ring-1 focus:ring-white transition-colors resize-none"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-white hover:bg-zinc-200 text-black font-bold py-4 px-8 rounded-lg transition-all transform hover:-translate-y-1">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="bg-zinc-900 flex flex-col h-full border-l border-white/5">
+                    <div class="p-8 md:p-12 flex-grow">
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-12 h-12 bg-black rounded-full flex items-center justify-center text-white text-xl border border-white/20">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="ml-6">
+                                    <h5 class="text-lg font-bold text-white mb-1">Notre emplacement</h5>
+                                    <p class="text-zinc-400">60 Rue Gélinas<br>Laval, QC H7M 2Z5<br>Québec</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-12 h-12 bg-black rounded-full flex items-center justify-center text-white text-xl border border-white/20">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="ml-6">
+                                    <h5 class="text-lg font-bold text-white mb-1">Appelez-nous</h5>
+                                    <p class="text-zinc-400"><a href="tel:5145811433" class="hover:text-white transition-colors">(514) 581-1433</a></p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-12 h-12 bg-black rounded-full flex items-center justify-center text-white text-xl border border-white/20">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+                                <div class="ml-6">
+                                    <h5 class="text-lg font-bold text-white mb-1">Heures d'ouverture</h5>
+                                    <ul class="text-zinc-400 space-y-1">
+                                        <li class="flex justify-between w-48"><span>Lun - Ven:</span> <span>9:00 - 17:00</span></li>
+                                        <li class="flex justify-between w-48"><span>Samedi:</span> <span>11:00 - 14:00</span></li>
+                                        <li class="flex justify-between w-48"><span>Dimanche:</span> <span>Fermé</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="h-64 w-full relative opacity-60 hover:opacity-100 transition-all duration-500">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.956795493208!2d-73.71448988424075!3d45.5914107791026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc923e2cc182a0b%3A0xc665e754bb7a8b66!2s60%20Rue%20G%C3%A9linas%2C%20Laval%2C%20QC%20H7M%202Z5%2C%20Canada!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="absolute inset-0">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black border-t border-white/10 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0 text-center md:text-left">
+                    <a href="index-fr.html" class="font-display font-bold text-2xl tracking-tighter text-white inline-block mb-4">
+                        NORTHSTAR<span class="text-zinc-500 font-light">AUTO</span>
+                    </a>
+                    <p class="text-zinc-500 text-sm max-w-sm">
+                        La destination de choix à Laval pour la réparation de carrosserie de précision, l'entretien mécanique et la finition experte.
+                    </p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition-all">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition-all">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-white/10 text-center flex flex-col md:flex-row justify-between items-center">
+                <p class="text-zinc-600 text-sm mb-4 md:mb-0">
+                    &copy; 2026 Northstar Auto. Tous droits réservés.
+                </p>
+                <div class="space-x-4 text-sm text-zinc-600">
+                    <a href="#" class="hover:text-zinc-300 transition-colors">Politique de confidentialité</a>
+                    <span>|</span>
+                    <a href="#" class="hover:text-zinc-300 transition-colors">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg', 'border-white/10');
+                navbar.classList.remove('border-transparent');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+        });
+
+        const reveals = document.querySelectorAll('.reveal');
+        
+        const revealOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, revealOptions);
+
+        reveals.forEach(reveal => {
+            revealOnScroll.observe(reveal);
+        });
+    </script>
+</body>
+</html>
